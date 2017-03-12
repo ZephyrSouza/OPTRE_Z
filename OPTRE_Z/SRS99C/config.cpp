@@ -258,7 +258,7 @@ class CfgWeapons
 	{
 		scope = 2; /// should be visible and useable in game
 		displayName = "Test weapon"; /// some name
-		model = "\Samples_f\Test_weapon_01\test_weapon_01_F.p3d"; /// path to model
+		model = "OPTRE_Z\SRS99C\SRS99C.p3d"; /// path to model
 
 		picture = "\Samples_f\Test_weapon_01\Data\UI\gear_test_weapon_01_X_CA.paa"; /// different accessories have M, S, T instead of X
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_gl_CA.paa"; /// weapon with grenade launcher should be marked such way
