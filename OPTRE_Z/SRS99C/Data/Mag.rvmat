@@ -8,7 +8,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "OPTRE_Z\SRS99C\data\Mag_NOHQ.paa";
+	texture = "SRS99C\data\Mag_NOHQ.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "OPTRE_Z\SRS99C\data\Mag_AS.paa";
+	texture = "SRS99C\data\Mag_AS.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "OPTRE_Z\SRS99C\data\Mag_SMDI.paa";
+	texture = "SRS99C\data\Mag_SMDI.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

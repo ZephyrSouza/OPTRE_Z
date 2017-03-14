@@ -1,30 +1,27 @@
-class CfgMagazines
-{
-	class Default;
+class CfgMagazines {
 
-	class CA_Magazine;
-
-	class 30Rnd_test_mag: CA_Magazine 
-	{
-		scope = public; /// or 2, to be precise
-		displayName = "Test magazine";
-		picture = "\A3\Weapons_F\Data\placeholder_co.paa"; /// just some icon
-		ammo = B_Test_Caseless;
-		count = 30; /// 30 rounds is enough
-		initSpeed = 795; /// standard muzzle speed
-		tracersEvery = 0; /// disable tracers by default
-		lastRoundsTracer = 4; /// tracers to track low ammo
-		descriptionShort = "Used to shoot test bullets"; /// on mouse-over in Inventory
-		magazineGroup[]	= {"test_mag_group"}; /// all magazines in the same group may be used in weapon that has the group defined as compatible
+	class 30Rnd_556x45_Stanag; /*external*/ 
+	
+	class tb_30Rnd_556x45_B_Stanag : 30Rnd_556x45_Stanag {
+		ammo = "TB_556x45_Ball";
+		count = 4;
+		descriptionshort = "Caliber: 45 ACP UMP Mag<br />Rounds: 30<br />Used in: HK UMP-45";
+		displayname = "45 ACP 30rnd UMP Mag (Ball)";
+		initspeed = 930;
+		lastroundstracer = 0;
+		picture = "\SRS99C\UI\gear_srs99c_Mag_x_CA";
+		model = "SRS99C\SR99C_Mag";
+		scope = 2;
+		tracersevery = 0;
 	};
-
-	class 30Rnd_test_mag_Tracer: 30Rnd_test_mag /// a magazine full of tracer rounds
-	{
-		tracersEvery = 1; /// moar tracers
-		lastRoundsTracer = 30; /// tracers everywhere
-		displayName = "Test tracer magazine";
-		descriptionShort = "Used to shoot test tracer bullets";
-		displaynameshort = "Tracers";
-		magazineGroup[]	= {"test_mag_group"};
+	
+	class tb_30Rnd_556x45_T_Stanag : tb_30Rnd_556x45_B_Stanag {
+		ammo = "TB_556x45_Tracer";
+		descriptionshort = "Caliber: 45 ACP UMP Mag<br />Rounds: 30<br />Used in: HK UMP-45";
+		displayname = "45 ACP 30rnd UMP Mag (Tracer)";
+		lastroundstracer = 0;
+		scope = 2;
+		tracersevery = 1;
 	};
+	
 };
