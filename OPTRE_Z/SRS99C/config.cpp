@@ -2,11 +2,11 @@ class CfgPatches // you could also create a seperate file for this if it gets mo
 {
 	class OPTREZ_SRS99C
 	{
-		requiredaddons[] = {};
+		requiredaddons[] = {A3_Weapons_F};
 		requiredversion = 0.1;
 		units[] = {};
 		weapons[] = {"OPTREZ_SRS99C"};
-		magazines[] = {"tb_30Rnd_556x45_B_Stanag", "tb_30Rnd_556x45_T_Stanag"};
+		magazines[] = {"SRS_4Rnd_127x108_B_Stanag", "SRS_4Rnd_127x108_T_Stanag","SRS_4Rnd_127x108_APDS","SRS_4Rnd_127x108_HVAP","SRS_4Rnd_127x108_HEDP"};
 	};
 };
 

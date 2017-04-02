@@ -7,12 +7,14 @@ class CfgWeapons
 	
 	class OPTREZ_SRS99C_base 
 	{
-		//pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\Sniper\SNIPER.paa";
-		//ODST_1    = "OPTRE_ODST_HUD_AmmoCount_Snipor";
-		//Glasses    = "OPTRE_GLASS_HUD_AmmoCount_Snipor"; 
-		//Eye    = "OPTRE_ODST_EYE_AmmoCount_Snipor";
-		//HUD_BulletInARows = 4;
-		//HUD_TotalPosibleBullet    = 4;
+		ACE_barrelTwist=482.70001;
+        ACE_barrelLength=1062.6;
+		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\Sniper\SNIPER.paa";
+		ODST_1    = "OPTRE_ODST_HUD_AmmoCount_Snipor";
+		Glasses    = "OPTRE_GLASS_HUD_AmmoCount_Snipor"; 
+		Eye    = "OPTRE_ODST_EYE_AmmoCount_Snipor";
+		HUD_BulletInARows = 4;
+		HUD_TotalPosibleBullet    = 4;
 		access = 3;
 		afmax = 0;
 		aidispersioncoefx = 4;
@@ -87,7 +89,7 @@ class CfgWeapons
 		lockedtargetsound[] = {"\A3\sounds_f\dummysound", 0.000316228, 6};
 		lockingtargetsound[] = {"\A3\sounds_f\dummysound", 0.000316228, 2};
 		magazinereloadtime = 0;
-		magazines[] = {"tb_30Rnd_556x45_B_Stanag", "tb_30Rnd_556x45_T_Stanag"};
+		magazines[] = {"SRS_4Rnd_127x108_B_Stanag", "SRS_4Rnd_127x108_T_Stanag","SRS_4Rnd_127x108_APDS","SRS_4Rnd_127x108_HVAP","SRS_4Rnd_127x108_HEDP"};
 		maxleadspeed = 23;
 		maxrange = 500;
 		maxrangeprobab = 0.04;
@@ -328,10 +330,6 @@ class CfgWeapons
                             maxRange = 2000;
                             maxRangeProbab = 0.25;
                     };
-	};
-	
-	class OPTREZ_SRS99C : OPTREZ_SRS99C_base {
-		scope = 2;
 	};
 
 	class OPTRE_SRS99D_Scope: ItemCore
