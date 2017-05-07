@@ -7,8 +7,8 @@ specularPower = 78;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
-{
-	texture = "OPTRE_Vehicles\Scorpion\data\Scorpion_Exterior_01_NOHQ.paa";
+{ 
+	texture = "Bison\data\Bison_WheelsCannon_NOHQ.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "OPTRE_Vehicles\Scorpion\data\Scorpion_Exterior_01_AS.paa";
+	texture = "Bison\data\Bison_WheelsCannon_AS.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "OPTRE_Vehicles\Scorpion\data\Scorpion_Exterior_01_SMDI.paa";
+	texture = "Bison\data\Bison_WheelsCannon_SMDI.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

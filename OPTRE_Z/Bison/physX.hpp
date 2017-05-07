@@ -1,37 +1,27 @@
 /// PhysX part
-/*numberPhysicalWheels = 18;
-wheelCircumference = 5.346362;
-simulation	= tankX;
-normalSpeedForwardCoef=0.6;
-slowSpeedForwardCoef=0.45;
 
-// Tank Water Ford config
-maxFordingDepth = 0;
-waterResistance = 0;
-waterDamageEngine = 0.2;
-waterLeakiness = 10;
-
-fuelConsumptionRate = 100;
-
-engineLosses = 25; // power losses on the engine's crank-shaft (before the gearbox) in Nm. (Multiplied by the gear ratio)
-transmissionLosses = 15; // power losses on wheel axis (in/after the gearbox) in Nm. (Constant)	*/
 
 		terrainCoef = 3.0;
 		turnCoef = 3;
-		canFloat = 1;
+		canFloat = 0;
 		waterAngularDampingCoef = 10.0;
-		waterPPInVehicle = 0;
+		waterPPInVehicle = 1; //0
 		waterResistanceCoef = 0.5;
 		engineShiftY = 0.5;
 
 
+		waterDamageEngine = 0.2;
+		waterLinearDampingCoefX = 0;
+		waterLinearDampingCoefY = 0;
+		waterSpeedFactor = 0.2;
+		
 
 		thrustDelay = 0.35;
 		brakeIdleSpeed = 1.78;
 		maxSpeed = 110;
 		fuelCapacity = 45;
 		wheelCircumference = 3.805;
-		waterLeakiness = 2.5;
+		waterLeakiness = 10; //2.5
 		normalSpeedForwardCoef = 0.52;
 		antiRollbarForceCoef = 24;
 		antiRollbarForceLimit = 30;

@@ -58,6 +58,7 @@ class CfgVehicles {
 			class MainTurret: NewTurret
 			{
 				class ViewOptics;
+				class ViewGunner;
 				class Turrets
 				{
 					class CommanderOptics;
@@ -84,7 +85,7 @@ class CfgVehicles {
 		editorSubcategory = "EdSubcat_APCs";
 		displayName = "IFV-90 Bison";
 		accuracy = 0.25;
-		author = "Model: Zephyr, Config and lods: Whitefame"; //Change?
+		author = "Article 2 Studios";
 		
 		// Model and look defines: paths to model, squad picture and map icon
 		model = "\Bison\IFV_Bison.p3d";
@@ -206,7 +207,7 @@ class CfgVehicles {
 
 				// Weapons and magazines					//Ändra
 				weapons[]={OPTRE_cannon_90mm,OPTRE_missiles_C2GMLS_2}; //Namn på vapnet ta bort _2
-				magazines[]={OPTRE_30Rnd_90mm_APTC,OPTRE_30Rnd_90mm_HE,OPTRE_2Rnd_C2GMLS_missiles};
+				magazines[]={OPTRE_30Rnd_90mm_APBC,OPTRE_30Rnd_90mm_HE,OPTRE_2Rnd_C2GMLS_missiles};
 
 				// Turret servos						
 				minElev=-2;
@@ -230,6 +231,7 @@ class CfgVehicles {
 				gunnerForceOptics = 0;
 				
 				isPersonTurret = 0;
+				usepip=1;
 				
 				
 				class ViewOptics: RCWSOptics
@@ -241,6 +243,16 @@ class CfgVehicles {
 					class Wide: Wide{};
 					class Medium: Medium{};
 					class Narrow: Narrow{};
+				};
+				
+				class ViewGunner: ViewGunner
+				{
+					//maxAngleY = 60; //test
+					//minAngleY = -240; //test
+					maxAngleY = -90;
+					minAngleY = -90;
+					initAngleY = -90;
+
 				};
 				
 				showCrewAim = 2;
@@ -378,31 +390,39 @@ class CfgVehicles {
 		};
 
 		// Damage textures - for sections: zbytek, vez, zbran, vezVelitele, zbranVelitele,
-	/*	class Damage {
+		class Damage {
 			tex[] = {};
 			mat[] = {
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_damage.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_destruct.rvmat",
-
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_body.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_body_damage.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_body_destruct.rvmat",
-
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_tracks.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_tracks_damage.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_tracks_destruct.rvmat",
-
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_turret.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_turret_damage.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_turret_destruct.rvmat",
-
-				"A3\Armor_F_Gamma\MBT_01\Data\MBT_01_scorcher.rvmat",
-				"A3\Armor_F_Gamma\MBT_01\Data\MBT_01_scorcher_damage.rvmat",
-				"A3\Armor_F_Gamma\MBT_01\Data\MBT_01_scorcher_destruct.rvmat"
+				"Bison\data\Bison_90mm.rvmat",
+				"Bison\data\Bison_90mm_damage.rvmat",
+				"Bison\data\Bison_destruct.rvmat",
+				
+				"Bison\data\Bison_Body.rvmat",
+				"Bison\data\Bison_Body_damage.rvmat",
+				"Bison\data\Bison_destruct.rvmat",
+				
+				"Bison\data\Bison_CameraGlass.rvmat",
+				"Bison\data\Bison_CameraGlass_damage.rvmat",
+				"Bison\data\Bison_destruct.rvmat",
+				
+				"Bison\data\Bison_Interior.rvmat",
+				"Bison\data\Bison_Interior_damage.rvmat",
+				"Bison\data\Bison_destruct.rvmat",
+				
+				"Bison\data\Bison_Misc.rvmat",
+				"Bison\data\Bison_Misc_damage.rvmat",
+				"Bison\data\Bison_destruct.rvmat",
+				
+				"Bison\data\Bison_Seats.rvmat",
+				"Bison\data\Bison_Seats_damage.rvmat",
+				"Bison\data\Bison_destruct.rvmat",
+				
+				"Bison\data\Bison_WheelsCannon.rvmat",
+				"Bison\data\Bison_WheelsCannon_damage.rvmat",
+				"Bison\data\Bison_destruct.rvmat"
 			};
 		}; 
-*/
+
 		smokeLauncherGrenadeCount = 6; //Number of smoke shells launched at once
 		smokeLauncherVelocity = 14; //Velocity which smoke shells are launched at
 		smokeLauncherOnTurret = 1; //0 if smoke launchers are on hull, 1 if on turret
@@ -508,8 +528,43 @@ class CfgVehicles {
 		// Editor displayname	// accuracy > 4 is not possible to be fully recognized during game	// due to above will show only in editor
 };
 
-	//class OPTRE_IFV_Bison_40 : OPTRE_IFV_Bison_base // För att den ska fungera utan OPTRE för test
+/****************************** IFV - Bison 40mm ******************************/	
 
+	class OPTRE_IFV_Bison_40 : OPTRE_IFV_Bison_base 
+	{
+		displayName = "IFV-40 Bison";
+		model = "\Bison\IFV_Bison_40.p3d";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret 
+			{
+				weapons[]={OPTRE_autocannon_40mm_CTWS,OPTRE_missiles_C2GMLS_2};
+				magazines[]={60Rnd_40mm_GPR_Tracer_Green_shells,40Rnd_40mm_APFSDS_Tracer_Green_shells,OPTRE_2Rnd_C2GMLS_missiles};
+			};
+		};
+		
+		class AnimationSources: AnimationSources
+		{
+			class muzzle_rot
+			{
+				source = "ammorandom";
+				weapon = "OPTRE_autocannon_40mm_CTWS";
+			};
+			class muzzle_hide
+			{
+				source = "reload";
+				weapon = "OPTRE_autocannon_40mm_CTWS";
+			};
+			class recoil_source 
+			{
+				source = "reload";
+				weapon = "OPTRE_autocannon_40mm_CTWS";
+			};
+		};
+	
+	};
+	
+	
 
 
 };
