@@ -312,11 +312,10 @@ class CfgVehicles {
 		
 		
 		/* RETEXTURABILITY	*/
-		/*
-			hiddenSelections[] ={"Camo1","Camo2"};
-			hiddenSelectionsTextures[] = {"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_CO.paa","A3\armor_f_gamma\MBT_01\Data\MBT_01_tow_CO.paa"};
-		*/
-
+			hiddenSelections[] ={"Camo1","Camo2","Camo3","Camo4","Camo5","Camo6","Camo7"};
+			hiddenSelectionsTextures[] = {"Bison\data\Bison_Body_CO.paa","Bison\data\Bison_Misc_CO.paa","Bison\data\Bison_WheelsCannon_CO.paa","Bison\data\Bison_Seats_CO.paa","Bison\data\Bison_Interior_CO.paa","Bison\data\Bison_MFCDScreens_CO.paa","Bison\data\Bison_CameraGlass_CO.paa"};
+			
+			
 
 		class AnimationSources: AnimationSources
 		{
@@ -534,6 +533,7 @@ class CfgVehicles {
 	{
 		displayName = "IFV-40 Bison";
 		model = "\Bison\IFV_Bison_40.p3d";
+		
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret 
