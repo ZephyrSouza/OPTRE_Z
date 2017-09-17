@@ -26,7 +26,6 @@ class CfgWeapons
 			   model                                                                   = "\M395\M395BaseMuzzle.p3d";
 			   descriptionShort                                                        = "M395 Muzzle";
 			   inertia                                                                 = 0.1;
-			   sound[] = {"M395\sound\DMR_1.ogg",1,1};
 				class ItemInfo: InventoryMuzzleItem_Base_F
 				{
 					mass = 5;
@@ -49,8 +48,8 @@ class CfgWeapons
 						cost			= 1;
 					}; 
 					muzzleEnd 			= "zaslehPoint"; // memory point in muzzle supressor's model
-					alternativeFire 	= "Zasleh2";  // class in cfgWeapons with model of muzzle flash	
-					soundTypeIndex		= 1; /// defines the position in sound[] array in the rifle
+					alternativeFire 	= "muzzleFlash";  // class in cfgWeapons with model of muzzle flash	
+					soundTypeIndex		= 0; /// defines the position in sound[] array in the rifle
 					class MuzzleCoef
 					{
 						dispersionCoef			= 1;
@@ -137,6 +136,7 @@ class CfgWeapons
 		displayName 								= "[OPTREZ] M395 DMR";
 		descriptionShort 							= "UNSC Marksman Rifle";
 		picture 									= "\M395\icons\M395_Icon.paa";
+		selectionFireAnim    = "muzzleFlash";
 		ODST_1																	= "OPTRE_ODST_HUD_AmmoCount_DMR";
 		Glasses																	= "OPTRE_GLASS_HUD_AmmoCount_DMR";
 		Eye																		= "OPTRE_EYE_HUD_AmmoCount_DMR";
