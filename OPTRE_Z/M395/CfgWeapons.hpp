@@ -277,7 +277,6 @@ class CfgWeapons
  		{
 			class MuzzleSlot: MuzzleSlot
 			{
-				access 								= 1;
 				compatibleitems[] 					= {"OPTRE_M395_MuzzleBase"};
 				displayname 						= "Muzzle Slot";
 				linkproxy 							= "\A3\data_f\proxies\weapon_slots\MUZZLE";
