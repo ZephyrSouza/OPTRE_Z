@@ -13,8 +13,16 @@ class CfgWeapons
             class InventoryOpticsItem_Base_F;
 			class InventoryFlashLightItem_Base_F;
 			class InventoryMuzzleItem_Base_F;
-     
-            //ATTACHMENTS
+     		class Zasleh2;
+	 
+            //MuzzleChanges
+			class ZaslehOPTREZ: Zasleh2
+			{
+				model = "a3\data_f\proxies\muzzle_flash\muzzle_flash_rifle_M200.p3d";
+			};
+
+
+			//ATTACHMENTS
      
 			class muzzle_snds_acp;
 			class OPTRE_M395_MuzzleBase: muzzle_snds_acp
@@ -48,7 +56,7 @@ class CfgWeapons
 						cost			= 1;
 					}; 
 					muzzleEnd 			= "zaslehPoint"; // memory point in muzzle supressor's model
-					alternativeFire 	= "muzzleFlash";  // class in cfgWeapons with model of muzzle flash	
+					alternativeFire 	= "ZaslehOPTREZ";  // class in cfgWeapons with model of muzzle flash	
 					soundTypeIndex		= 0; /// defines the position in sound[] array in the rifle
 					class MuzzleCoef
 					{
