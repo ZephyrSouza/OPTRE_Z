@@ -74,6 +74,55 @@ class CfgWeapons
 					};			
 				};
 			};
+			class OPTRE_M395_Suppressor: muzzle_snds_acp
+			{
+				dlc = "OPTRE";
+			   scope                                                                   = 2;
+			   displayName                                                             = "M395 Suppressor";
+			   picture = "\M395\icons\M395__Suppressor_Icon.paa";
+			   model                                                                   = "\M395\M395Suppressor.p3d";
+			   descriptionShort                                                        = "M395 Suppressor";
+			   inertia                                                                 = 0.1;
+				class ItemInfo: InventoryMuzzleItem_Base_F
+				{
+					mass = 5;
+					class MagazineCoef
+					{
+						initSpeed 		= 0.65;
+					};
+					class AmmoCoef
+					{
+						// bullet ballistic modifiers
+						hit				= 1;
+						typicalSpeed	= 1;
+						airFriction		= 1;
+					
+						// AI modifiers
+						visibleFire		= 0.5;
+						audibleFire		= 0.3;
+						visibleFireTime	= 0.5;
+						audibleFireTime	= 0.5;
+						cost			= 1;
+					}; 
+					muzzleEnd 			= "zaslehPoint"; // memory point in muzzle supressor's model
+					alternativeFire 	= "Zasleh2";  // class in cfgWeapons with model of muzzle flash	
+					soundTypeIndex		= 1; /// defines the position in sound[] array in the rifle
+					class MuzzleCoef
+					{
+						dispersionCoef			= 1;
+						artilleryDispersionCoef	= 1;
+		
+						fireLightCoef			= 0.1f;
+
+						recoilCoef				= 0.8f;
+						recoilProneCoef			= 0.8f;
+
+						minRangeCoef = 1.0f; minRangeProbabCoef = 1.0f;
+						midRangeCoef = 1.0f; midRangeProbabCoef = 1.0f;
+						maxRangeCoef = 1.0f; maxRangeProbabCoef = 1.0f;
+					};			
+				};
+			};
             class OPTRE_M395_Scope: ItemCore
             {
 					dlc = "OPTRE";
@@ -82,7 +131,6 @@ class CfgWeapons
 					picture 																= "\M395\icons\M395__Scope_Icon.paa";
                     model                                                                   = "\M395\M395Optic.p3d";
                     descriptionShort                                                        = "M395 Optic";
-                    weaponInfoType                                                          = "RscOptics_nightstalker";
                     modelOptics                                                     		= "\M395\M395Optic.p3d";
                     class ItemInfo: InventoryOpticsItem_Base_F
                     {
@@ -96,17 +144,17 @@ class CfgWeapons
                                     {
 											opticsID = 1;
 											useModelOptics = 1;
-                                            opticsZoomMin                                   = 0.01;
-                                            opticsZoomMax                                   = 0.25;
-                                            opticsZoomInit                                  = 0.25;
-											discretefov[] 									= {0.25,0.05,0.025,0.01};
+                                            opticsZoomMin                                   = 0.125;
+                                            opticsZoomMax                                   = 0.042;
+                                            opticsZoomInit                                  = 0.125;
+											discretefov[] 									= {0.125,0.0625,0.042};
 											discreteinitIndex 								= 0;
-											discreteDistance[] 								= {100,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
+											discreteDistance[] 								= {100,300,400,500,600,700,800};
 											discreteDistanceInitIndex 						= 1;
-											distanceZoomMin 								= 100;
-											distanceZoomMax 								= 2000;
+											distanceZoomMin 								= 200;
+											distanceZoomMax 								= 600;
                                             memoryPointCamera                               = "opticView";
-                                            modelOptics[]                                   = {"\M395\M395_optic5.p3d"};
+                                            modelOptics[]                                   = {"\M395\M395_optic5.p3d","\M395\M395_optic10.p3d","\M395\M395_optic15.p3d"};
 											opticsPPEffects[] 								= {"OpticsCHAbera1","OpticsBlur1"};
                                             visionMode[]                                    = {"Normal","NVG"};
 											thermalMode[] 									= {5,6};
@@ -117,6 +165,94 @@ class CfgWeapons
                     };
                     inertia                                                                 = 0;
             };
+			class optic_Arco;
+			class OPTRE_M395_ACOG: optic_Arco
+				{
+					displayName="M395 ACOG";
+					author=$STR_A3_Bohemia_Interactive;
+					picture="\M395\icons\M395__ACOG_Icon.paa";
+					model = "\M395\M395ACOG.p3d";
+					scope = 2;
+					descriptionShort = "Sample of 3D scope + Holosight combo";
+					weaponInfoType = "RscWeaponZeroing";
+
+					class ItemInfo: InventoryOpticsItem_Base_F
+					{
+                            mass                                                            = 10;
+                            opticType                                                       = 1;
+                            optics                                                          = 1;
+                            modelOptics                                                     = "\M395\M395Optic.p3d";
+						class OpticsModes
+						{
+							class Test_scope3D_01_Collimator
+							{
+								opticsID = 1;
+								useModelOptics = false;
+								opticsPPEffects[]={""};
+								opticsFlare = false;
+								opticsDisablePeripherialVision = false;
+								opticsZoomMin=0.375;
+								opticsZoomMax=1;
+								opticsZoomInit=0.75;
+								memoryPointCamera = "eye";
+								visionMode[] = {}; /// Can be combined with NVG
+								distanceZoomMin=300;
+								distanceZoomMax=300;
+							};
+							class Test_scope3D_01_Scope
+							{
+								opticsID = 2;
+								useModelOptics = false;
+								opticsPPEffects[]={"OpticsCHAbera5","OpticsBlur5"};
+								opticsFlare = true;
+								opticsDisablePeripherialVision = true;
+								opticsZoomMin = 0.2;
+								opticsZoomMax=0.2;
+								opticsZoomInit=0.2;
+								memoryPointCamera = "opticView";
+								visionMode[] = {"Normal"}; /// Cannot be combined with NVG
+								distanceZoomMin=300;
+								distanceZoomMax=300;
+							};
+						};
+					};
+					inertia = 0.1;
+				};
+			class optic_Aco;	
+			class OPTRE_M395_EOTECH: optic_Aco
+			{
+				scope 										= 2;
+				displayName 								= "M395 EOTECH";
+				picture = "\M395\icons\M395__EOTECH_Icon.paa";
+				descriptionShort 							= "EOTECH";
+				model									    = "\M395\M395EOTECH.p3d";
+				inertia 									= 0.1;
+				class ItemInfo: InventoryOpticsItem_Base_F
+				{
+					mass = 4;
+					modelOptics = "\A3\Weapons_F\empty";
+					optics = 1;
+					class OpticsModes
+					{
+						class EOTECHSIGHT
+						{
+							opticsID = 1;
+							useModelOptics = 0;
+							opticsZoomMin = 0.375;
+							opticsZoomMax = 1.1;
+							opticsZoomInit = 0.75;
+							memoryPointCamera = "eye";
+							opticsFlare = 0;
+							opticsDisablePeripherialVision = 0;
+							distanceZoomMin = 100;
+							distanceZoomMax = 100;
+							cameraDir = "";
+							visionMode[] = {};
+							opticsPPEffects[] = {""};
+						};
+					};
+				};
+			};				
             //MainRifle	
 	class Rifle_Long_Base_F;
 	class DMR_02_base_F: Rifle_Long_Base_F
@@ -277,7 +413,7 @@ class CfgWeapons
  		{
 			class MuzzleSlot: MuzzleSlot
 			{
-				compatibleitems[] 					= {"OPTRE_M395_MuzzleBase"};
+				compatibleitems[] 					= {"OPTRE_M395_MuzzleBase","OPTRE_M395_Suppressor"};
 				displayname 						= "Muzzle Slot";
 				linkproxy 							= "\A3\data_f\proxies\weapon_slots\MUZZLE";
 				scope 								= 2;
@@ -327,7 +463,9 @@ class CfgWeapons
 					"OPTRE_BR55HB_Scope", 
 					"OPTRE_M7_Sight", 
 					"OPTRE_M395_Scope",
-					"OPTRE_SRS99_Scope"//OPTRE END
+					"OPTRE_SRS99_Scope",
+					"OPTRE_M395_ACOG",
+					"OPTRE_M395_EOTECH"//OPTRE END
 				};
 				linkproxy 							= "\A3\data_f\proxies\weapon_slots\TOP";
 			};
