@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project
+  name="RDS_StaticW">
+  <Package
+    name="All">
+    <Container
+      name="Weapons">
+
+      <Key
+        ID="str_dn_dshkm">
+        <German>DShKM</German>
+        <Original>DShKM</Original>
+        <Italian>DShKM</Italian>
+        <Spanish>DShKM</Spanish>
+        <French>DShKM</French>
+        <Czech>DŠKM</Czech>
+        <Russian>ДШКМ</Russian>
+        <Polish>DSzKM</Polish>
+        <Hungarian>DSKM</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_lib_dshkm">
+        <German>Das DShK (Degtjarjowa Schpagina Krupnokalibernij) ist ein schweres sowjetisches Maschinengewehr, das Geschosse vom Kaliber 12,7 mm abfeuert. Das DShKM ist eine modernisierte Version, die 1946 eingeführt wurde. Sie wurde inzwischen von modernen NSV- und Kord-Maschinengewehren abgelöst, wird aber noch immer von verschiedenen Armeen und Widerstandsgruppen weltweit eingesetzt.</German>
+        <Original>The DShK (Degtyarev-Shpagin Large Calibre) is a Soviet heavy machine gun firing 12.7mm (.50 in) Soviet cartridges. The 'modernized' DShKM version was introduced in 1946. It has been largely replaced by modern NSV and Kord machine guns, but still finds its place in armies and resistance groups the world over.</Original>
+        <Italian>Il DShK (Degtyarev-Shpagin di grosso calibro) è una mitragliatrice sovietica, che spara pallottole da 12,7 mm. Il DShKM è una versione aggiornata introdotta nel 1946. Pur essendo stata largamente rimpiazzata dalle moderne mitragliatrici NSV e Kord, trova ancora posto in numerosi eserciti e gruppi di resistenza di tutto il mondo.</Italian>
+        <Spanish>El DShK (Degtyarev-Shpagin Large Calibre) es una ametralladora pesada soviética que lanza cartuchos soviéticos de 12,7mm (.50 in). La DShKM es una versión más moderna introducida en 1946. En general, ha sido sustituida por las ametralladoras modernas NSV y Kord, pero sigue ocupando un lugar en ejércitos y grupos de resistencia de todo el mundo.</Spanish>
+        <French>La DShK (mitrailleuse de gros calibre Degtyarev-Shpagin) est une mitrailleuse lourde soviétique tirant des munitions de 12,7 mm de type Bloc de l'Est. La DShKM est une version modernisée introduite en 1946. Elle a été largement remplacée par les mitrailleuses modernes NSV et Kord, mais est encore utilisée par des armées et groupes de résistance du monde entier.</French>
+        <Czech>DŠK (Děgťarev-Špagin) je těžký sovětský 12,7mm kulomet. DŠKM je modernizovanou verzí původního modelu z roku 1946. Dnes jej většinou nahradily moderní kulomety NSV a Kord, nicméně i tak je tato zbraň stále používána v různých částech světa.</Czech>
+        <Russian>ДШК (система Дегтярева-Шпагина) - это советский тяжелый пулемет под патрон калибра 12,7 мм. ДШКМ - модернизированная версия образца 1946 года. Ее по большей части вытеснили современные пулеметы НСВ и 'Корд', но она все еще состоит на вооружении армий некоторых стран мира, а также повстанцев.</Russian>
+        <Polish>DSzK (Diegtiariew-Szpagin Wielkokalibrowy) to rosyjski ciężki karabin maszynowy strzelający pociskami 12,7 mm. 'Unowocześniona' wersja DSzKM weszła do służby w roku 1946. W większości został zastąpiony przez nowoczesne karabiny maszynowe NSW i Kord, ale wciąż można go spotkać na wyposażeniu niektórych armii i grup partyzanckich na całym świecie.</Polish>
+        <Hungarian>A DSK egy szovjet-orosz nehézgéppuska, ami 12.7 mm-es szovjet lőszert tüzel. A ’modernizált’ DSKM változatot 1946-ban állították hadrendbe, bár a nagy részüket lecserélték a korszerűbb NSzV és Kord géppuskákra, még mindig fellelhetőek ellenállóknál és más hadseregeknél szerte a világon.</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_dn_kord">
+        <German>KORD</German>
+        <English>KORD</English>
+        <Italian>KORD</Italian>
+        <Spanish>Kord </Spanish>
+        <French>KORD</French>
+        <Czech>KORD</Czech>
+        <Russian>Корд</Russian>
+        <Polish>KORD</Polish>
+        <Hungarian>KORD</Hungarian>
+      </Key>
+      <Key
+        ID="str_dn_kord_low">
+        <German>KORD Ministativ</German>
+        <English>KORD Minitripod</English>
+        <Italian>Minitreppiede KORD</Italian>
+        <Spanish>Minitrípode KORD</Spanish>
+        <French>KORD mini-trépied</French>
+        <Czech>KORD Minitrojnožka</Czech>
+        <Russian>Корд мини-тренога</Russian>
+        <Polish>Mini trójnóg KORD</Polish>
+        <Hungarian>KORD miniállvány</Hungarian>
+      </Key>
+      <Key
+        ID="str_lib_kord">
+        <German>Das Kord ist ein russisches schweres Maschinengewehr. Diese Waffe ging 1998 in den Dienst und ersetzte das ältere NSV-Maschinengewehr. Auf den ersten Blick ähnelt das Kord dem NSV, es verfügt jedoch über eine höhere Präzision bei anhaltendem Feuer.
+Das Kord verwendet 12.7x108 mm-Patronen und hat eine Feuerrate von ungefähr 750 U/min mit einer Reichweite von 2000 m.</German>
+        <English>The Kord is a Russian heavy machine gun. This weapon entered service in 1998 and replaced the older NSV machine gun. At first glance the Kord resembles the NSV but it provides greater accuracy during sustained fire.
+The Kord uses 12.7x108 mm cartridges and has a rate of fire of about 750 rpm with an effective range of 2000m.</English>
+        <Italian>Il Kord è una mitragliatrice pesante russa. Quest'arma è stata introdotta nel 1998 e ha rimpiazzato la vecchia mitragliatrice NSV. A prima vista, il Kord assomiglia all'NSV, ma offre maggior precisione durante i momenti di fuoco intenso.
+Il Kord usa cartucce da 12,7x108 mm ed ha una cadenza di fuoco di circa 750 munizioni al minuto, con una portata effettiva di 2000 metri.</Italian>
+        <Spanish>La Kord es una ametralladora pesada rusa. Este arma comenzó a utilizarse en 1998 para sustituir a la vieja ametralladora NSV. A simple vista, la Kord es muy parecida a la NSV, pero proporciona más precisión con fuego sostenido.
+La Kord emplea cartuchos de 12,7 mm x 108 mm y posee una cadencia de disparo de uno 750 rpm con alcance efectivo de 2000 m.</Spanish>
+        <French>Le Kord est une mitrailleuse lourde russe. Cette arme, entrée en service en 1998, a remplacé l'ancienne mitrailleuse NSV. À première vue, la ressemblance est troublante, mais le Kord offre une plus grande précision en tir soutenu.
+Le Kord emploie des cartouches de 12,7x108 mm à une cadence de 750 c./min. Sa portée pratique est de 2000 m.</French>
+        <Czech>Kord je ruský těžký kulomet. Tato zbraň se začala používat v roce 1998 a nahradila starší kulomet NSV. Kord na první pohled připomíná NSV, ale během nepřerušované palby je přesnější.
+Do Kordu se používají náboje 12,7x108 mm, dosahuje kadence kolem 750 ran za minutu a efektivní dosah má 2000 m.
+</Czech>
+        <Russian>Корд' - российский тяжелый пулемет. Это оружие поступило на вооружение в 1998 году и заменило старые пулеметы НСВ. На первый взгляд 'Корд' напоминает НСВ, но обладает большей точностью при непрерывном огне. 
+'Корд' использует патроны 12,7х108 мм при скорости стрельбы около 750 выстрелов в минуту и эффективном радиусе поражения в 2000 м.</Russian>
+        <Polish>Kord to ciężki karabin maszynowy produkcji rosyjskiej. Broń, w 1998 roku, zastąpiła starszy model karabinu maszynowego NSW. Na pierwszy rzut oka, Kord przypomina NSW jednak zapewnia większą celność podczas podczas strzelania serią.&lt;br/&gt;Kord wykorzystuje pojemniki 12,7x108 mm. Jego szybkostrzelność wynosi około 750 rpm, a efektywny zasięg 2000 m. </Polish>
+        <Hungarian>A Kord egy orosz nehézgéppuska, amelyet az a tény hívott életre, hogy a korbbái NSzV nehézgéppuska gyártósora Kazahsztán területére került a Szovjetunió szétesésekor. Első ránézésre hasonlít az NSzV-re, viszont a belső szerkezetén végrehajtott fejlesztések miatt nagyobb pontosságot biztosít folyamatos tüzelés közben. A Kord 12.7x108 mm-es lőszert tüzel körülbelül 750 lövés/perces tűzgyorsaságon és 2000 m-es hatásos lőtávval.</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_dn_ags30">
+        <German>AGS-30</German>
+        <English>AGS-30</English>
+        <Italian>AGS-30</Italian>
+        <Spanish>AGS-30</Spanish>
+        <French>AGS-30</French>
+        <Czech>AGS-30</Czech>
+        <Russian>АГС-30</Russian>
+        <Polish>AGS-30</Polish>
+        <Hungarian>AGSz-30</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_lib_ags30">
+        <German>Der AGS-30 ist ein automatischer Granatwerfer, der als leichtere Alternative zum bewährten und erfolgreichen AGS-17 entwickelt wurde. Die Waffe dient hauptsächlich dazu, der Infanterie Feuerunterstützung zu bieten. Er kann auf Fahrzeugen montiert werden.</German>
+        <English>AGS-30 automatic grenade launcher was developed as a lightweight alternative to the already proven and successful AGS-17. This weapon is used mostly for infantry fire support and can be installed on vehicles.</English>
+        <Italian>Il lanciagranate automatico AGS-30 è stato sviluppato come versione più leggera dell’AGS-17. Quest’arma viene usata principalmente come supporto per la fanteria e può essere montata sui veicoli.</Italian>
+        <Spanish>El lanzagranadas automático AGS-30 ha sido desarrollado como una alternativa ligera al popular AGS-17. Esta arma se utiliza principalmente como apoyo a infantería, y se puede instalar en los vehículos.</Spanish>
+        <French>Le lance-grenades automatique AGS-30 a été conçu comme une alternative légère à l'AGS-17 aux capacités éprouvées. Cette arme sert essentiellement à l'appui d'infanterie et peut être installée sur des véhicules.</French>
+        <Czech>Automatický granátomet AGS-30 byl navržen jako alternativa k již vyzkoušenému a úspěšnému AGS-17. Tato zbraň slouží především k palebné podpoře pěchoty a lze ji nainstalovat na různá vozidla.</Czech>
+        <Russian>Автоматический гранатомет АГС-30 был разработан как облегченная альтернатива прекрасно зарекомендовавшему себя АГС-17. Это оружие в основном предназначено для поддержки пехоты, а также может быть установлено на различную технику.</Russian>
+        <Polish>Automatyczny granatnik AGS-30 został opracowany jako lżejsza alternatywa dla sprawdzonego i udanego AGS-17. Broń ta jest wykorzystywana głównie jako wsparcie ogniowe piechoty, może być też instalowana na wielu pojazdach.</Polish>
+        <Hungarian>Az AGSz-30-at a már bizonyított és sikeres AGSz-17 automata gránátveő könnyű alternatívájaként fejlesztették ki. Ezt a fegyvert általában a gyalogság támogatására használják és járművekre is felszerelhető.</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_mn_at13">
+        <German>Metis-M 9K115-2</German>
+        <English>Metis-M 9K115-2</English>
+        <Italian>Metis-M 9K115-2</Italian>
+        <Spanish>Metis-M 9K115-2</Spanish>
+        <French>Metis-M 9K115-2</French>
+        <Czech>Metis-M 9K115-2</Czech>
+        <Russian>ПТУР 9М131</Russian>
+        <Polish>Metis-M 9K115-2</Polish>
+        <Hungarian>Metisz-M 9K115-2</Hungarian>
+      </Key>
+      <Key
+        ID="str_dn_at13">
+        <German>Metis AT-13</German>
+        <English>Metis AT-13</English>
+        <Italian>Metis AT-13</Italian>
+        <Spanish>Metis AT-13</Spanish>
+        <French>Metis AT-13</French>
+        <Czech>Metis AT-13</Czech>
+        <Russian>ПТРК Метис-М</Russian>
+        <Polish>Metis AT-13</Polish>
+        <Hungarian>Metisz AT-13</Hungarian>
+      </Key>
+      <Key
+        ID="str_dn_at13launchersingle">
+        <German>Metis-M 9K115-2</German>
+        <English>Metis-M 9K115-2</English>
+        <Italian>Metis-M 9K115-2</Italian>
+        <Spanish>Metis-M 9K115-2</Spanish>
+        <French>Metis-M 9K115-2</French>
+        <Czech>Metis-M 9K115-2</Czech>
+        <Russian>ПТРК Метис-М</Russian>
+        <Polish>Metis-M 9K115-2</Polish>
+        <Hungarian>Metisz-M 9K115-2</Hungarian>
+      </Key>
+      <Key
+        ID="str_lib_at13">
+        <German>Das AN - 9K115 Metis-M (bei der NATO geführter Name: AN - 13 Saxhorn-2), ist ein russisches Panzerabwehr-Lenkraketensystem. Dank seines leichten Gewichts (nur 13,8 Kg), kann das AN - 13 durch Infanterie-Einheiten oder Fahrzeuge leicht transportiert werden. &lt;br/&gt; Dieses System ist äußerst leicht zu bedienen - es kann bis zu 4 Schüsse pro Minute abgeben.</German>
+        <English>The AT-9K115 Metis-M (NATO reporting name is AT-13 Saxhorn-2) is a Russian anti-tank missile system. Thanks to its light weight (only 13,8 kg), the AT-13 can be easily transported by infantry units or vehicles. &lt;br/&gt;This system is extremely easy to operate – it can fire up to 4 rounds per minute.</English>
+        <Italian>L'AT-9K115 Metis-M (denominazione NATO: AT-13 Saxhorn-2) è un sistema missilistico anticarro russo. Grazie alla sua leggerezza (solo 13,8 kg), l'AT-13 può essere facilmente trasportato da unità di fanteria o veicoli. &lt;br/&gt;Questo sistema è molto facile da operare e può sparare fino a 4 colpi al minuto.</Italian>
+        <Spanish>El AT-9K115 Metis-M (AT-13 Saxhorn-2 en la clasificación de la OTAN) es un sistema ruso de misiles antitanque cuyo peso (13,8 kg) permite a las unidades de infantería o a los vehículos transportarlo fácilmente. &lt;br/&gt;Este sistema es muy fácil de manejar y permite disparar hasta 4 cargas por minuto.</Spanish>
+        <French>L'AT-9K115 Metis-M (désignation OTAN : AT-13 Saxhorn-2) est un missile antichar russe. Grâce à son poids réduit (13,8 kg), l'AT-13 est facilement transportable par des fantassins et des véhicules. &lt;br/&gt;Cet armement d'emploi très facile peut tirer jusqu'à 4 projectiles par minute.</French>
+        <Czech>AT-9K115 Metis-M (kódové označení NATO je AT-13 Saxhorn-2) je ruský protitankový raketový systém. Díky nízké hmotnosti (pouhých 13,8 kg) lze AT-13 snadno přepravit ve vozidlech nebo pěchotními jednotkami. &lt;br/&gt;Tento systém se neobyčejně snadno ovládá – lze odpálit až 4 střely za minutu.</Czech>
+        <Russian>9K115М 'Метис-М' (по классификации НАТО AT-13-Saxhorn-2) - российский противотанковый ракетный комплекс. Благодаря небольшому весу (всего 13,8 кг), Метис-М может легко транспортироваться солдатами или техникой. &lt;br/&gt;Боевая скорострельность составляет 4 выстрела в минуту.</Russian>
+        <Polish>AT-9K115 Metis-M (kod NATO: AT-13 Saxhorn-2) to rosyjski system pocisków przeciwpancernych. Dzięki stosunkowo małemu ciężarówi (tylko 13,8 kg), AT-13 może być łatwo transportowany przez jednostki piechoty lub pojazdy. &lt;br/&gt;System jest niezwykle łatwy w użyciu – może wystrzelić do 4 pocisków na minutę.</Polish>
+        <Hungarian>Az AT-9K115 Metisz-M (NATO jelentési neve AT-13 Saxhorn-2) egy orosz tankelhárító rakétaindító rendszer. A könnyű (13,8 kb) súlyának köszönhetően az AT-13-at szállíthatja a gyalogság és járművek is egyaránt. &lt;br/&gt; Ezt a rendszert rendkívül könnyű használni – 4 lövést lehet leadni vele percenként.</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_dn_spg9">
+        <German>SPG-9</German>
+        <English>SPG-9</English>
+        <Italian>SPG-9</Italian>
+        <Spanish>SPG-9</Spanish>
+        <French>SPG-9</French>
+        <Czech>SPG-9</Czech>
+        <Russian>СПГ-9</Russian>
+        <Polish>SPG-9</Polish>
+        <Hungarian>SzPG-9</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_lib_spg9">
+        <German>Die SPG-9 Kopye ("Speer") ist eine russische rückstoßfreie Pistole. Sie feuert flossenstabilisierte, raketenunterstütze 73 mm HE oder HEAT-Geschosse mit einer Reichweite von etwa 800 m ab. &lt;br/&gt; Die SPG-9 wird gewöhnlich als leichte Panzerabwehrwaffe verwendet und von einem Fahrzeug transportiert.</German>
+        <English>The SPG-9 Kopye (in English: Spear) is a Russian recoilless gun. It fires fin-stabilized, rocked-assisted 73 mm HE or HEAT projectiles with effective range of about 800 m. &lt;br/&gt;The SPG-9 is usually used as a light anti-tank weapon, transported by vehicles.</English>
+        <Italian>L'SPG-9 Kopye (in italiano: lancia) è una pistola senza rinculo russa. Spara proiettili HE o HEAT da 73 mm con alette stabilizzanti ed ha una portata effettiva di circa 800 metri. &lt;br/&gt;L'SPG-9 viene di solito impiegato come arma per carri armati leggeri.</Italian>
+        <Spanish>La SPG-9 Kopye (en español, lanza) es una pistola sin retroceso de fabricación rusa capaz de disparar proyectiles HE o HEAT de 73 mm estabilizados mediante aletas y propulsados por cohete desde una distancia aproximada de 800 metros. &lt;br/&gt;La SPG-9 se utiliza normalmente como un arma ligera antitanques y suele transportarse en vehículos.</Spanish>
+        <French>Le SPG-9 Kopye (Lance en français) est un canon sans recul russe. Il expédie des projectiles à empennage et propulsion par fusée de 73 mm de type explosif ou à charge creuse à une portée pratique d'environ 800 m. &lt;br/&gt;Le SPG-9 est essentiellement utilisé comme arme antichar légère montée sur véhicule.</French>
+        <Czech>SPG-9 Kopje (česky: Kopí) je ruská bezzákluzová zbraň. Odpaluje 73 mm rakety HE nebo HEAT se stabilizujícími směrovkami a má efektivní dosah 800 m. &lt;br/&gt; SPG-9 se obvykle používá jako lehká protitanková zbraň, kterou přepravují vozidla.</Czech>
+        <Russian>СПГ-9 Копье - российское безоткатное орудие. Стреляет оперенными активно-реактивными снарядами 73 мм с эффективной дальностью стрельбы до 800 м. &lt;br/&gt;СПГ-9 обычно применяется как легкое  противотанковое оружие, перевозится на технике.</Russian>
+        <Polish>SPG-9 Kopie (Włócznia) to rosyjskie działo bezodrzutowe. Broń może strzelać pociskami odłamkowymi 73 mm lub przeciwpancernymi kumulacyjnymi. Zasięg skuteczny tej broni wynosi około 800 m. &lt;br/&gt;Działo SPG-9 jest zazwyczaj transportowane przez pojazdy i wykorzystywane jako lekka broń przeciwpancerna. </Polish>
+        <Hungarian>Az SPG-9 Kopye (magyarul: Lándzsa) egy orosz, hátrasiklás nélküli löveg. Szárnystabilizált, rakéta meghajtású 73 mm-es robbanó vagy kumulatív páncéltörő lövedéket képes kilőni körülbelül 800 méterre. &lt;br/&gt; Az SPG-9-cet általában járművön szállított könnyű tankelhárító fegyverként használják</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_mn_og9">
+        <German>OG-9V(HE)</German>
+        <English>OG-9V(HE)</English>
+        <Italian>OG-9V(HE)</Italian>
+        <Spanish>OG-9V(HE)</Spanish>
+        <French>OG-9V (expl.)</French>
+        <Czech>OG-9V(HE)</Czech>
+        <Russian>ОГ-9В</Russian>
+        <Polish>OG-9V (burzący)</Polish>
+        <Hungarian>OG-9V(HE)</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_mn_pg9">
+        <German>PG-9N (AT)</German>
+        <English>PG-9N(AT)</English>
+        <Italian>PG-9N(AT)</Italian>
+        <Spanish>PG-9N (AT)</Spanish>
+        <French>PG-9N (perf.)</French>
+        <Czech>PG-9N(AT)</Czech>
+        <Russian>ПГ-9В</Russian>
+        <Polish>PG-9N (ppanc.)</Polish>
+        <Hungarian>PG-9N(AT)</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_mn_igla">
+        <German>Igla 9K38</German>
+        <English>Igla 9K38</English>
+        <Italian>Igla 9K38</Italian>
+        <Spanish>Igla 9K38</Spanish>
+        <French>Igla 9K38</French>
+        <Czech>Igla 9K38</Czech>
+        <Russian>ЗУР 9М39</Russian>
+        <Polish>Igła 9K38</Polish>
+        <Hungarian>Igla 9K38</Hungarian>
+      </Key>
+      <Key
+        ID="str_mn_9k32">
+        <German>9K32 Strela</German>
+        <English>9K32 Strela</English>
+        <Italian>9K32 Strela</Italian>
+        <Spanish>9K32 Strela</Spanish>
+        <French>9K32 Strela</French>
+        <Czech>9K32 Strela</Czech>
+        <Russian>ЗУР 9М32М</Russian>
+        <Polish>9K32 Strieła</Polish>
+        <Hungarian>9K32 Sztrela</Hungarian>
+      </Key>
+      <Key
+        ID="str_dn_igla_twice">
+        <German>Igla 9K38</German>
+        <English>Igla 9K38</English>
+        <Italian>Igla 9K38</Italian>
+        <Spanish>Igla 9K38</Spanish>
+        <French>Igla 9K38</French>
+        <Czech>Igla 9K38</Czech>
+        <Russian>ПЗРК 'Игла'</Russian>
+        <Polish>Igła 9K38</Polish>
+        <Hungarian>Igla 9K38</Hungarian>
+      </Key>
+      <Key
+        ID="str_dn_igla_aa_pod_east">
+        <German>IGLA Luftabwehrstellung</German>
+        <English>AA IGLA Pod</English>
+        <Italian>Cavalletto IGLA AA</Italian>
+        <Spanish>Misil encapsulado AA IGLA</Spanish>
+        <French>Module AA IGLA</French>
+        <Czech>AA IGLA Pod</Czech>
+        <Russian>ОПУ Джигит</Russian>
+        <Polish>IGŁA wyrzutnia plot.</Polish>
+        <Hungarian>AA IGLA Pod</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_dn_2b14">
+        <German>Podnos 2B14</German>
+        <English>Podnos 2B14</English>
+        <Italian>Podnos 2B14</Italian>
+        <Spanish>Podnos 2B14</Spanish>
+        <French>Podnos 2B14</French>
+        <Czech>Podnos 2B14</Czech>
+        <Russian>2Б14-1 Поднос</Russian>
+        <Polish>Podnos 2B14</Polish>
+        <Hungarian>Podnosz 2B14</Hungarian>
+      </Key>
+      <Key
+        ID="str_lib_2b14">
+        <German>Der Podnos (in Englisch: Tray) 2C14 ist ein russischer 82 mm Mörser. Er wurde als Unterstützungswaffe für motorisierte Sturmtruppen entworfen und dient der Zerstörung und Unterdrückung feindlicher Infanterie. &lt;br/&gt; Das Gewicht des M252 liegt bei 31 Kg. Er kann über Weiten von 80 bis 400 Metern genutzt werden und feuert dabei bis zu 20 Mal pro Minute.</German>
+        <English>The Podnos (in English: Tray) 2C14 is a Russian 82 mm mortar. It was designed as a supporting weapon for motorized rifle companies and its goal is to destroy and suppress enemy infantry.&lt;br/&gt;The weight of the M252 is 31 kg and it can be used over ranges from 80 up to 4000 m, firing up to 20 rounds per minute.</English>
+        <Italian>Il Podnos (in italiano: vassoio) 2C14 è un mortaio russo da 82 mm. Progettato come arma di supporto per le compagnie di fucilieri motorizzati, il suo scopo è quello di distruggere e sopprimere la fanteria nemica.&lt;br/&gt;Il peso dell'M252 è di 31 kg ed ha una portata che varia tra gli 80 ed i 4000 m; può sparare fino a 20 colpi al minuto.</Italian>
+        <Spanish>El Podnos (en español, "bandeja") 2C14 es un mortero ruso de 82 mm diseñado como arma de apoyo para compañías de rifles motorizados con el objetivo de destruir y eliminar la infantería enemiga.&lt;br/&gt;El M252 pesa 31 kg, se puede utilizar en distancias que van de los 80 a los 4000 metros y es capaz de disparar hasta 20 cargas por minuto.</Spanish>
+        <French>Le Podnos (Plateau en français) 2C14 est un mortier russe de 82 mm. C'est une arme d'appui des compagnies de fusiliers motorisés destinée à clouer et éliminer l'infanterie ennemie.&lt;br/&gt;Il pèse 31 kg et peut expédier 20 projectiles à la minute à une distance comprise entre 80 et 4000 m.</French>
+        <Czech>Podnos 2B14 je ruský minomet ráže 82 mm. Byl zkonstruován jako podpůrná zbraň motorizovaných střeleckých rot a jeho účelem je zničit a potlačit nepřátelskou pěchotu. &lt;br/&gt;2B14 váží 31 kg, dostřel má 80 až 4000 m a dokáže vystřelit až dvacetkrát za minutu.</Czech>
+        <Russian>2Б14-1 'Поднос' - российский 82-мм миномет. Разработан в качестве оружия непосредственной огневой поддержки пехотных подразделений.&lt;br/&gt;  Используется для поражения целей на дальности от 80 до 4000 м. Вес миномета составляет 31 кг. Боевая скорострельность до 20 выстрелов в минуту.</Russian>
+        <Polish>2C14 Podnos (po polsku Taca) to rosyjski moździerz kaliber 82 mm. Głównym przeznaczeniem broni jest wsparcie jednostek zmotoryzowanej piechoty. Moździerz jest używany do niszczenia jednostek nieprzyjacielskiej piechoty.&lt;br/&gt;Ciężar M252 wynosi 31 kg. Zasięg od 80 do 4000 m. Może wystrzelić do 20 pocisków na minutę.</Polish>
+        <Hungarian>A Podnosz (magyarul: serpenyő) 2C14 egy orosz 82mm-es aknavető. A gépesített lövész századok tűztámogatására fejlesztették az ellenséges gyalogság lefopgása és megsemmisítése céljából. A 2B14 súlya 31 kg, a hatótávolsága 80-4000m-ig terjed és percenként 20 lövést tud leadni.</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_dn_d30">
+        <German>D-30</German>
+        <English>D-30</English>
+        <Italian>D30</Italian>
+        <Spanish>D-30</Spanish>
+        <French>D30</French>
+        <Czech>D-30</Czech>
+        <Russian>Д-30</Russian>
+        <Polish>D-30</Polish>
+        <Hungarian>D-30</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_lib_d30">
+        <German>Die D-30 122 mm-Haubitze, auch bekannt als 2A18M Lyaguschka, ist um 360 Grad schwenkbar und sowohl für steile als auch flache Schusswinkel geeignet. Sie wird als Unterstützungs- und Panzerabwehrwaffe eingesetzt.</German>
+        <English>The D-30 122mm howitzer, also known as the 2A18M Lyagushka, has a revolving mount that permits 360 degree rotation and is designed for both high and low angles of fire making it fully suitable for fire support and anti-tank defense.</English>
+        <Italian>L’Howitzer D-30 da 122 mm, conosciuto anche come 2A18M Lyagushka, possiede un sostegno rotante che gli consente di girare a 360°, rendendolo ideale per supporto di fuoco e come difesa anticarro.</Italian>
+        <Spanish>El obús D-30 de 122mm, también conocido como 2A18M Lyagushka, contiene una pieza que permite el giro de 360° y está diseñado para ángulos de tiro grandes y reducidos, muy conveniente para proporcionar apoyo y defensa antitanque.</Spanish>
+        <French>L'obusier de 122 mm D-30, également appelé 2A18M Lyagushka, est équipé d'une base lui permettant de pivoter à 360° et peut tirer selon des angles faibles comme élevés. Il est donc aussi utile en appui-feu qu'en défense antichar.</French>
+        <Czech>122mm houfnice D-30, také známá jako 2A18M Ljaguška, disponuje úhlem záběru 360°  a je schopna palby pod nízkým i vysokým úhlem. Slouží k palebné podpoře i protitankové obraně.</Czech>
+        <Russian>122-миллиметровая гаубица 2A18M, также известная как 'Лягушка', имеет лафет, который позволяет вести огонь во всех направлениях. Она предназначена для стрельбы с высоким и низким углом наведения и, таким образом, прекрасно подходит для огневой поддержки и противотанковой обороны.</Russian>
+        <Polish>Haubica D-30 122 mm, znana też jako 2A18M Ljaguszka, ma podstawę z szyną umożliwiającą obrót o 360 stopni i jest przeznaczona do prowadzenia ognia pod małym i dużym kątem. Nadaje się do wsparcia ogniowego i zwalczania czołgów.</Polish>
+        <Hungarian>A D-30 122 mm-es vontatott tarack egy forgatható állványzatra van felszerelve, aminek a segítségével akár 360 fokban körbe lehet forgatni. Magas és alacsony szögcsoportban való tüzelésre egyaránt alkalmas, ezáltal teljes tűztámogatást képes biztosítani és a tankelhárító képessége is kitűnő. </Hungarian>
+      </Key>
+
+
+
+      <Key
+        ID="str_dn_m2_mg">
+        <German>M2 Maschinengew.</German>
+        <English>M2 Machine Gun</English>
+        <Italian>Mitragliatrice M2</Italian>
+        <Spanish>Ametralladora M2</Spanish>
+        <French>Mitr. M2</French>
+        <Czech>Kulomet M2</Czech>
+        <Russian>Пулемет M2</Russian>
+        <Polish>M2 KM</Polish>
+        <Hungarian>M2 géppuska</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_dn_m2hd_minitripod">
+        <German>M2HD Minidreibein</German>
+        <English>M2 Minitripod</English>
+        <Italian>Minitreppiede M2HD</Italian>
+        <Spanish>Mini trípode M2HD</Spanish>
+        <French>M2HD Mini-trépied</French>
+        <Czech>M2 (nízký)</Czech>
+        <Russian>M2 мини-тренога</Russian>
+        <Polish>Mini trójnóg M2</Polish>
+        <Hungarian>M2 miniállvány</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_lib_m2_mg">
+        <German>Das Kaliber .50 Browning M2 ist ein schweres automatisches MG aus dem 2. Weltkrieg. Das vielseitige M2 wurde im Laufe der Jahre in unzähligen Fahrzeugen, Flugzeugen und Schiffen eingesetzt und ist bis heute weltweit im Einsatz. Die Waffe kann gegen Infanterieeinheiten, leicht gepanzerte Fahrzeuge, langsame Flugzeuge und kleine Boote eingesetzt werden.</German>
+        <English>The Browning M2 .50 caliber Machine Gun, is a World War II era automatic, crew-operated machine gun. The very versatile M2 has served on a wide variety of ground vehicles, aircraft and ships over the years, and is still widely used around the world. This weapon can be used effectively against infantry, light armored vehicles, slow flying aircraft and small boats.</English>
+        <Italian>La Browning M2 calibro 50 è una mitragliatrice automatica, in uso sin dalla II Guerra Mondiale. Molto versatile, nel corso degli anni è stata utilizzata a bordo di veicoli, mezzi aerei e navi ed è ancora largamente utilizzata in tutto il mondo. Quest’arma è efficace contro la fanteria, i veicoli blindati leggeri, i mezzi aerei a bassa velocità e le piccole imbarcazioni.</Italian>
+        <Spanish>La ametralladora Browning M2 de calibre .50 es un arma automática de la Segunda Guerra Mundial. De gran versatilidad, se ha utilizado en muchos vehículos de tierra, aire y mar, y su uso sigue estando muy generalizado en todo el mundo. Es eficaz contra unidades de infantería, blindajes ligeros, aviones que vuelan a poca velocidad y embarcaciones pequeñas.</Spanish>
+        <French>La mitrailleuse Browning M2 .50 (12,7 mm) est une arme automatique de la Seconde Guerre mondiale exigeant plusieurs servants. Très polyvalente, elle a été employée à bord de véhicules, aéronefs et embarcations très divers et demeure largement utilisée dans le monde entier. Elle est efficace contre l'infanterie, les blindés légers, les aéronefs à basse altitude et les petites embarcations.</French>
+        <Czech>Kulomet Browning M2 ráže .50 pochází z období druhé světové války.  Víceúčelový M2 byl použit jako součást výzbroje různých pozemních, leteckých i námořních prostředků a byl používán po mnoho let na celém světě. Tuto zbraň lze použít proti pěchotě, lehce obrněným vozům, pomalu letícím cílům i malým člunům.</Czech>
+        <Russian>Пулемет М2 'Браунинг' калибра .50 - это автоматическое оружие времен Второй мировой, для обслуживания ему нужен расчет. М2 - универсальное оружие, которое долгие годы используется на различной наземной технике, воздушных судах и кораблях по всему миру.</Russian>
+        <Polish>Browning M2 0,50 cala to automatyczny karabin maszynowy z okresu II wojny światowej. Jest to niezwykle uniwersalna broń. Od lat wykorzystuje się go w wielu pojazdach, samolotach i okrętach. Można go skutecznie używać przeciwko piechocie, lekkim pojazdom opancerzonym, wolno lecącym celom i małym łodziom.</Polish>
+        <Hungarian>A Browning M2 .50-es kaliberű nehézgéppuska az 1920-as évektől az Amerikai Hadsereg első számú tűztámogató fegyvere. A rendkívül sokoldalú M2 földi, légi és vízi járműveken is szolgált az évek során és ma is széleskörben használják szerte az egész világon. Ez a fegyver rendkívül hatékony élőerő, könnyen páncélozott járművek, lassan haladó repülőgépek valamint kisebb hajók/csónakokkal szemben, effektív lőtávolsága az 1,8 km-et is eléri.</Hungarian>
+      </Key>
+
+
+      <Key
+        ID="str_dn_m119">
+        <German>M119</German>
+        <English>M119</English>
+        <Italian>M119</Italian>
+        <Spanish>M119</Spanish>
+        <French>M119</French>
+        <Czech>M119</Czech>
+        <Russian>M119</Russian>
+        <Polish>M119</Polish>
+        <Hungarian>M119</Hungarian>
+      </Key>
+      <Key
+        ID="str_lib_m119">
+        <German>Die M119A1 ist eine leichte Artilleriewaffe, die konzipiert wurde, um Infanterieeinheiten direkte und indirekte Feuerunterstützung zu bieten. Die Haubitze kann sehr schnell bewegt und eingesetzt werden.</German>
+        <English>The M119A1 is a lightweight air-mobile artillery piece used to provide direct and indirect fire support to infantry units. The howitzer can be quickly moved and deployed to provide maximum fire power in a short period of time.</English>
+        <Italian>L’M119A1 è un pezzo d’artiglieria mobile leggero, usato per offrire fuoco di supporto diretto ed indiretto alle unità di fanteria. Può essere spostato velocemente per offrire massima potenza di fuoco in un breve periodo di tempo.</Italian>
+        <Spanish>El M119A1 es una pieza de artillería ligera transportable utilizada para apoyar, directa e indirectamente, a unidades de infantería. El obús se puede mover y desplegar con gran rapidez, maximizando la potencia de ataque en breves períodos de tiempo.</Spanish>
+        <French>Le M119A1 est une pièce d'artillerie aérotransportable fournissant un appui-feu direct et indirect aux unités d'infanterie. Cet obusier peut être rapidement déplacé et redéployé pour fournir une puissance de feu maximale sous un délai très bref.</French>
+        <Czech>M119A1 je lehký protiletadlový kanón, který poskytuje přímou i nepřímou palebnou podporu pěchotním jednotkám. Je mobilní a schopný palby po krátké přípravě.</Czech>
+        <Russian>M119A1 - это легкая артеллирийская установка для поддержки пехоты огнем прямой и непрямой наводкой. Гаубицу можно перебрасывать и развертывать довольно быстро. Это позволяет обеспечивать максимальную огневую мощь в кратчайший срок.</Russian>
+        <Polish>M119A1 jest lekką haubicą, dającą pośrednie i bezpośrednie wsparcie ogniowe dla jednostek piechoty. Można ją szybko przemieszczać, by maksymalnie wykorzystać siłę ognia w jak najkrótszym czasie.</Polish>
+        <Hungarian>Az M119A1 egy könnyű légiszállítású ágyútarack amellyel direkt és indirekt támogatást szoktak biztosítani a gyalogságnak. A könnyű tarackot gyorsan arrébb lehet vinni majd felállítani, így rövid idő alatt maximális tűzerőt tud biztosítani.</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_dn_m252">
+        <German>M252 81mm Mörser</German>
+        <English>M252 81mm Mortar</English>
+        <Italian>Mortaio M252 81 mm</Italian>
+        <Spanish>Mortero M252 81 mm</Spanish>
+        <French>Mortier 81 mm M252</French>
+        <Czech>Minomet M252 81mm</Czech>
+        <Russian>Миномет 81мм М252</Russian>
+        <Polish>Moździerz M252 81mm</Polish>
+        <Hungarian>M252 81mm aknavető</Hungarian>
+      </Key>
+      <Key
+        ID="str_lib_m252">
+        <German>Der M252 81mm Mörser ist ein Steilfeuergeschütz mit glattem Lauf. Er benötigt eine vierköpfige Bedienmannschaft und hat eine Feuerreichweite von 80 bis 5500 Metern. &lt;br/&gt;Der M252 wiegt 41,3 kg und wird für indirekte Feuerunterstützung eingesetzt.</German>
+        <English>The M252 81mm Mortar is a medium-weight smooth-bore high-angle-firing weapon. It is usually operated by a 4-man crew and can be fired at ranges from 80 to 5500m. &lt;br/&gt;The weight of the M252 is 41,3 kg and usually it is used for long-range indirect supporting fire.</English>
+        <Italian>Il mortaio M252 da 81 mm è un'arma di peso medio, a canna liscia e ad ampio angolo di fuoco. Di solito viene operato da 4 persone ed ha una portata che varia tra gli 80 ed i 5500 metri. &lt;br/&gt;L'M252 pesa 41,3 kg e di solito viene usato per fuoco di supporto indiretto a lunga gittata.</Italian>
+        <Spanish>El mortero M252 de 81 mm es un arma de ánima lisa de peso medio que permite disparar en ángulo alto. Por lo general, se necesita una tripulación de 4 hombres para manejarlo y se puede disparar desde distancias que van de 80 a 5500 metros. &lt;br/&gt;El peso del M252 es de 41,3 kg y se suele utilizar como arma de apoyo para efectuar disparos indirectos de largo alcance.</Spanish>
+        <French>Le mortier de 81 mm M252 est une arme à tir indirect et tube lisse de poids moyen. Il est généralement mis en œuvre par 4 servants et porte de 80 à 5500 m. &lt;br/&gt;Le M252 pèse 41,3 kg et est généralement employé en appui-feu indirect à longue portée.</French>
+        <Czech>81mm minomet M252 je středně těžká zbraň s hladkou hlavní pro palbu s vysokým úhlem. Standardně jej obsluhuje čtyřčlenné mužstvo, minomet dostřelí do vzdálenosti od 80 do 5500 m. &lt;br/&gt; M252 váží 41,3 kg a obvykle se používá pro dalekonosnou nepřímou podpůrnou palbu.</Czech>
+        <Russian>81 мм миномет М252 - гладкоствольное орудие с высоким углом наведения. Обычно управляется расчетом из 4-х человек и может стрелять на расстояние от 80 до 5500 м. &lt;br/&gt;Вес М252 - 41,3 кг, обычно используется для непрямой огневой поддержки на больших расстояниях.</Russian>
+        <Polish>Moździerz M252 81 mm to broń gładkolufowa, strzelająca pod dużym kątem. Zazwyczaj jest obsługiwana przez załogę złożoną z 4 osób. Zasięg broni wynosi od 80  do 5500 m. &lt;br/&gt;Ciężar moździerza to około 41,3 kg. Moździerz zapewnia wsparcie z dalekiego dystansu. </Polish>
+        <Hungarian>Az M252 81mm-es aknavető egy közepes-súlyú, simacsövű magas szögben tüzelő fegyver. Általában 4 főből álló személyzet működteti és 80-5500m-ig lehet ellőni vele. &lt;br/&gt; Az M252 súlya 41,3 kg és az esetek többségében nagy távolságról indirekt támogatást biztosítanak vele. </Hungarian>
+      </Key>
+
+      <Key
+        ID="str_dn_tow_tripod">
+        <German>TOW-Dreibein</German>
+        <English>TOW Tripod</English>
+        <Italian>Treppiede TOW</Italian>
+        <Spanish>Trípode TOW</Spanish>
+        <French>TOW trépied</French>
+        <Czech>Trojnožka TOW</Czech>
+        <Russian>TOW Тренога</Russian>
+        <Polish>TOW na trójnogu </Polish>
+        <Hungarian>TOW állvány</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_dn_tow">
+        <German>M220 TOW</German>
+        <English>M220 TOW</English>
+        <Italian>M220 TOW</Italian>
+        <Spanish>BGM-71A TOW</Spanish>
+        <French>BGM-71A TOW</French>
+        <Czech>M220 TOW</Czech>
+        <Russian>M220 TOW</Russian>
+        <Polish>M220 TOW</Polish>
+        <Hungarian>M220 TOW</Hungarian>
+      </Key>
+
+      <Key
+        ID="str_dn_mk19_tripod">
+        <German>MK19 Minidreibein</German>
+        <English>MK19 Minitripod</English>
+        <Italian>Minitreppiede MK19</Italian>
+        <Spanish>Mini trípode MK19</Spanish>
+        <French>MK19 Mini-trépied</French>
+        <Czech>Granátomet Mk19</Czech>
+        <Russian>MK19 мини-тренога</Russian>
+        <Polish>MK19 mini trójnóg </Polish>
+        <Hungarian>MK19 miniállvány</Hungarian>
+      </Key>
+
+    </Container>
+  </Package>
+</Project>
