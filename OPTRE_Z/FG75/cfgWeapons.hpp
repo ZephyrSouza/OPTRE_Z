@@ -1,29 +1,25 @@
-class cfgWeapons
-{
-
-	class cannon_120mm;
-	class OPTREZ_FG75: cannon_120mm
+class CfgWeapons {
 	
-	{
-		displayName = FG75;
-		magazines[] = 	
-		{
-			"RDS_30Rnd_122mmAT_D30",
-			"RDS_30Rnd_122mmHE_D30",
-			"RDS_30Rnd_122mmWP_D30"
+/*extern*/
+class cannon_120mm;
+class player;
+class OPTRE_cannon_120mm : cannon_120mm {
+	class close;
+	class far;
+	class short;
+	class medium;
+	class gunParticles;
+	
+	class player : Player {
+	reloadTime= 1.5;
 		};
-		reloadTime = 6;
-		magazineReloadTime = 4;
-
-		class GunParticles {
-			class Effect1 
-			{
-				directionname = "Konec hlavne";
-				effectname = "ArtilleryFired1";
-				positionname = "Usti hlavne";
-			};
-		};
+	};
 
 
+class OPTRE_75mm: OPTRE_cannon_120mm {
+	displayName ="M75 Smoothbore High-Velocity Cannon";
+	magazines[] = {"OPTRE_4Rnd_75mm_HE", "OPTRE_4Rnd_75mm_AT"};
+	magazineReloadTime= 14;
+	reloadTime= 1.5;
 	};
 };

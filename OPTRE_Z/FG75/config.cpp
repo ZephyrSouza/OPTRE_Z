@@ -1,17 +1,19 @@
-class CfgPatches // you could also create a seperate file for this if it gets more complex.
+class CfgPatches
 {
-	class OPTREZ_FG75
+	class OPTRE_Weapons_FG75
 	{
-		requiredaddons[] = {A3_Weapons_F};
-		requiredversion = 0.1;
-		units[] = {};
-		weapons[] = {"OPTREZ_FG75"};
-		magazines[] = {"RDS_30Rnd_122mmAT_D30", "RDS_30Rnd_122mmHE_D30"};
+		units[] = 
+		{
+			"OPTRE_FG75"
+		};
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"A3_Static_F","A3_Weapons_F","OPTRE_Core"};
 	};
 };
 
+//#include "basicdefines_A3.hpp"
+#include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgAmmo.hpp"
-#include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
-

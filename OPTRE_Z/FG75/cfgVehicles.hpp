@@ -1,118 +1,300 @@
-#define crewMacro(sideN,factionN,crewN) \
-		side=sideN; \
-		faction=factionN; \
-		crew=crewN; \
-		typicalCargo[]= {crewN};
-
-//Faction Name Macro
-#define mF1 IND_F
-//Crew Name Macro 
-#define mC1 I_Soldier_F
-//FIA
-#define mF2 BLU_G_F
-#define mC2 B_G_Soldier_F
-//CSAT
-#define mF3 OPF_F
-#define mC3 O_Soldier_F
-
 class CfgVehicles
 {
-	class LandVehicle;
+	class All;
+	class AllVehicles: All
+	{
+		class ViewOptics;
+		class NewTurret
+		{
+			class ViewGunner;
+		};
+	};
+	class Land: AllVehicles{};
+	class LandVehicle: Land
+	{
+		class ViewPilot;
+		class CommanderOptics;
+	};
 	class StaticWeapon: LandVehicle
 	{
-		class Turrets;
-		class MainTurret;
+		class Turrets
+		{
+			class MainTurret: NewTurret{};
+		};
+		class UserActions;
 	};
-	class StaticMGWeapon: StaticWeapon{};
-	class StaticATWeapon:StaticWeapon {};
-	class StaticAAWeapon:StaticWeapon {};
-	class StaticCannon: StaticWeapon {class ViewOptics;};
 
-	class StaticGrenadeLauncher:StaticWeapon {class ViewOptics;};
-	class StaticMortar:StaticWeapon{};
-//#########################ZU23
-	// D30
-	class OPTREZ_FG75: StaticCannon
+	class StaticCannon: StaticWeapon
 	{
-		accuracy = 0.12;
-		cost = 10000;
-		availableForSupportTypes[]= {};
-		artilleryScanner = 0;
-		displayName= "FG75";
-
-		model="\FG75\FG75";
-		//icon= "RDS_StaticW\data\map_ico\icomap_d30_CA.paa";
-		//picture="\RDS_StaticW\data\ico\d30_CA.paa";
-		//UiPicture="\RDS_StaticW\data\ico\d30_CA.paa";
-
-		mapSize = 4.5;
-		cargoAction[] = {D30_Cargo,D30_Commander};
-		typicalCargo[]={I_Soldier_F,I_Soldier_F,I_Soldier_F};
-		transportSoldier = 2;
-		gunnerHasFlares = true;
-		
-		memoryPointsGetInCargo = "pos_cargo_dir";
-		memoryPointsGetInCargoDir = "pos_cargo";		
-		
 		class Turrets: Turrets
 		{
-			class MainTurret: MainTurret
-			{
-				gunBeg="Usti hlavne";
-				gunEnd="Konec hlavne";
-				weapons[]={OPTREZ_cannon_FG75};
-				magazines[] = 	
-				{
-					"RDS_30Rnd_122mmAT_D30",
-					"RDS_30Rnd_122mmHE_D30",
-					"RDS_30Rnd_122mmWP_D30"
-				};
-				gunnerAction = "D30_Gunner";
-				//gunnerOpticsModel = "\RDS_StaticW\2Dscope_D30";
-				//gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2"};
-				memoryPointsGetInGunner = "pos_gunner_dir";
-				memoryPointsGetInGunnerDir = "pos_gunner";
-				
-				minElev=-9;
-				maxelev = 80;
-				minTurn=-180;
-				maxTurn=180;
-				class ViewOptics: ViewOptics
-				{
-					initFov=0.096; minFov=0.096; maxFov=0.096; //FOV 11 deg
-				};
-			};
+			class MainTurret;
 		};
-		class AnimationSources
-		{
-			class recoil_source
-			{
-				source="reload";
-				weapon="RDS_D30";
-			};
-			class leftT_source {source="user";animPeriod = 1;initPhase=-2.3; };
-			class rightT_source: leftT_source {initPhase=0; };
-			class leftW_source: leftT_source {initPhase=-1.7; };
-			class rightW_source: leftW_source {};
-			class maingunT_source {source="user";animPeriod = 1;initPhase=0; };
-			class mainTurretT_source: maingunT_source {};
-			class szpilki_source {source="user";animPeriod = 0.1;initPhase=0; };
-		};
-		//class Damage
-		//{
-		//	tex[]={};
-		//	mat[]={
-		//		"RDS_StaticW\D30\data\d30.rvmat",
-		//		"RDS_StaticW\D30\data\d30_damage.rvmat",
-		//		"RDS_StaticW\D30\data\d30_destruct.rvmat"
-		//	};
-		//};
-		class Library {libTextDesc = $STR_LIB_D30;};
+	};
+	class OPTRE_StaticCannon_base: StaticCannon
+	{
+		author = "Article 2 Studios";
+		simulation = "tank";
 		htMin = 1;
 		htMax = 480;
 		afMax = 0;
 		mfMax = 0;
 		mFact = 1;
-		tBody = 450;
+		tBody = 100;
+		selectionFireAnim = "zasleh";
+		nameSound = "veh_staticCannon";
+		class SpeechVariants
+		{
+			class Default
+			{
+				speechSingular[] = {"veh_staticCannon"};
+				speechPlural[] = {"veh_staticCannons"};
+			};
+		};
+		accuracy = 0.5;
+		armor = 100;
+		camShakeCoef = 0.4;
+		hasCommander = 1;
+		castCargoShadow = 1;
+		mapSize = 8;
+		cost = 150000;
+		driverCanSee = "2+8+16+32";
+		gunnerCanSee = "2+4+8+16+32";
+		commanderCanSee = "2+4+8+16+32";
+		irScanGround = 2;
+		allowTabLock = 0;
+		canUseScanners = 0;
+		lib_attach_pos[] = {0,0,0};
+		cargoAction[] = {"Zis3_Loader","Zis3_Cargo1","Zis3_Cargo2"};
+		transportSoldier = 3;
+		getInAction = "GetInLow";
+		getOutAction = "GetOutLow";
+		cargoGetInAction[] = {"GetInLow"};
+		cargoGetOutAction[] = {"GetOutLow"};
+		class HitPoints
+		{
+			class HitEngine
+			{
+				armor = 1;
+				material = -1;
+				name = "motor";
+				passThrough = 1;
+			};
+			class HitHull
+			{
+				armor = 1;
+				material = -1;
+				name = "telo";
+				passThrough = 1;
+			};
+			class HitBody
+			{
+				armor = 1;
+				material = -1;
+				name = "NEzbytek";
+				visual = "zbytek";
+				passThrough = 1;
+			};
+			class HitLTrack
+			{
+				armor = 5;
+				material = -1;
+				name = "HitLTrack";
+				visual = "LWheel";
+				passThrough = 0;
+			};
+			class HitRTrack
+			{
+				armor = 5;
+				material = -1;
+				name = "HitRTrack";
+				visual = "RWheel";
+				passThrough = 0;
+			};
+			class HitTurret
+			{
+				armor = 10;
+				material = -1;
+				name = "HitTurret";
+				visual = "Turret";
+				passThrough = 1;
+			};
+			class HitGun
+			{
+				armor = 10;
+				material = -1;
+				name = "HitGun";
+				visual = "Gun";
+				passThrough = 1;
+			};
+		};
+		class AnimationSources
+		{
+			class recoil_gun
+			{
+				source = "user";
+				animPeriod = 0;
+			};
+			class MainTurret_Hide: recoil_gun{};
+			class MainGun_Hide: recoil_gun{};
+			class left_stand_Hide: recoil_gun{};
+			class right_stand_Hide: recoil_gun{};
+			class wheel_1_1_Hide: recoil_gun{};
+			class wheel_2_1_Hide: recoil_gun{};
+			class Shield_up_Hide: recoil_gun{};
+			class Shield_small: recoil_gun
+			{
+				animPeriod = 0.5;
+			};
+			class chassis_lift_rotate: Shield_small
+			{
+				animPeriod = 2;
+			};
+			class Shield_down_rotate: chassis_lift_rotate{};
+			class left_stand_rotate: chassis_lift_rotate
+			{
+				initPhase = 1;
+			};
+			class left_brake_rotate: left_stand_rotate{};
+			class left_handle_rotate: left_stand_rotate{};
+			class left_handle_locker_translate: left_stand_rotate{};
+			class right_stand_rotate: left_stand_rotate{};
+			class right_brake_rotate: left_stand_rotate{};
+			class right_handle_rotate: left_stand_rotate{};
+			class right_handle_locker_translate: left_stand_rotate{};
+			class wheel_1_1: recoil_gun
+			{
+				animPeriod = 0.01;
+			};
+			class wheel_2_1: wheel_1_1{};
+			class SightX: recoil_gun
+			{
+				animPeriod = 0.001;
+			};
+			class Rotation_Chassis: recoil_gun
+			{
+				animPeriod = 1e-012;
+				initPhase = 0;
+			};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				minElev = -5;
+				maxElev = 37;
+				minTurn = -23;
+				maxTurn = 23;
+				initElev = 5;
+				gunnerAction = "Zis3_Gunner";
+				hideWeaponsGunner = 0;
+				gunnerGetInAction = "GetInLow";
+				gunnerGetOutAction = "GetOutLow";
+				maxHorizontalRotSpeed = 0.3;
+				maxVerticalRotSpeed = 0.3;
+				memoryPointsGetInGunner = "pos_gunner";
+				memoryPointsGetInGunnerDir = "pos_gunner_dir";
+				ejectDeadGunner = 1;
+				turretInfoType = "RscWeaponZeroing";
+				discreteDistance[] = {100,200,300,400,500,600,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200,3400,3600,3800,4000};
+				discreteDistanceInitIndex = 0;
+				gunnerOpticsColor[] = {};
+				allowTabLock = 0;
+				canUseScanners = 0;
+				class OpticsIn
+				{
+					class Wide
+					{
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						minFov = 0.1;
+						initFov = 0.1;
+						maxFov = 0.1;
+						visionMode[] = {"Normal"};
+						thermalMode[] = {0,1};
+						gunnerOpticsEffect[] = {};
+					};
+					class Narrow: Wide
+					{
+						minFov = 0.1;
+						initFov = 0.1;
+						maxFov = 0.1;
+					};
+				};
+			};
+			class CommanderOptics: CommanderOptics
+			{
+				allowTabLock = 0;
+				canUseScanners = 0;
+				body = "ObsTurret";
+				gun = "ObsGun";
+				gunBeg = "usti hlavne";
+				gunEnd = "konec hlavne";
+				gunnerOutOpticsModel = "";
+				memoryPointGun = "kulas";
+				outGunnermayfire = 0;
+				selectionFireAnim = "zasleh";
+				stabilizedInAxes = 3;
+				memoryPointGunnerOutOptics = "commanderview";
+				memoryPointsGetInGunner = "pos_commander";
+				memoryPointsGetInGunnerDir = "pos_commander_dir";
+				weapons[] = {"FakeWeapon"};
+				magazines[] = {"FakeWeapon"};
+				startEngine = 0;
+				forceHideCommander = 0;
+				animationSourceHatch = "";
+				gunnerAction = "Zis3_Commander";
+				minTurn = 0;
+				maxTurn = 0;
+				gunnerGetInAction = "GetInLow";
+				gunnerGetOutAction = "GetOutLow";
+				ejectDeadGunner = 1;
+				castgunnerShadow = 1;
+				hideWeaponsGunner = 0;
+				gunnerForceOptics = 0;
+				gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+				class ViewOptics: ViewOptics
+				{
+					minAngleX = -10;
+					minAngleY = -360;
+					maxAngleY = 360;
+					initFov = 0.4;
+					minFov = 0.4;
+					maxFov = 0.4;
+				};
+			};
+		};
+		class UserActions{};
+	};
+	class OPTRE_FG75: OPTRE_StaticCannon_base
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		displayName = "FG75";
+		model = "\FG75\FG75.p3d";
+		faction = "OPTRE_Ins";
+		vehicleClass = "OPTRE_UNSC_Static_class";
+		editorSubcategory = "EdSubcat_Turrets";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"OPTRE_75mm"};
+				magazines[] = {"OPTRE_4Rnd_75mm_HE","OPTRE_4Rnd_75mm_HE","OPTRE_4Rnd_75mm_HE","OPTRE_4Rnd_75mm_AT","OPTRE_4Rnd_75mm_AT","OPTRE_4Rnd_75mm_AT"};
+			};
+		};
+		
+		class AnimationSources: AnimationSources
+		{
+			class revolving_rot {source = "revolving"; weapon = "OPTRE_75mm";};
+			
+		};
+		
 	};
 };
